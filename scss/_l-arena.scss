@@ -1,0 +1,239 @@
+.arena {
+  padding: 72px 0;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 72px;
+
+    @include desktop {
+      display: block;
+    }
+
+    &-info {
+      @include desktop {
+        margin-bottom: 16px;
+      }
+
+      @include tablet {
+        margin-bottom: 24px;
+      }
+
+      &-title {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 110%;
+        text-transform: uppercase;
+        color: #fff;
+
+        @include laptop {
+          font-size: 64px;
+        }
+
+        @include tablet {
+          font-size: 48px;
+          line-height: 120%;
+        }
+
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+
+      &-description {
+        margin-top: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #fff;
+
+        @include tablet {
+          margin-top: 24px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-time {
+      padding-top: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      text-transform: uppercase;
+      text-align: right;
+      color: #fff;
+
+      @include desktop {
+        padding-top: 0;
+      }
+
+      @include laptop {
+        font-size: 36px;
+      }
+
+      @include tablet {
+        font-size: 32px;
+      }
+
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include desktopsm {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 72px 24px;
+    }
+  }
+
+  &__card {
+    flex: 0 0 336px;
+
+    &_auto {
+      flex: 0 0 auto;
+
+      @include desktopsm {
+        flex: 0 0 336px;
+      }
+    }
+
+    &-title {
+      margin: 0 0 24px;
+      padding: 16px 24px;
+      font-family: 'Mossport', sans-serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 34px;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      border-radius: 16px;
+      background-color: $blue;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &-time {
+      margin: 0 0 48px;
+      font-family: 'Mossport', sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 25px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+
+    &-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 36px;
+
+      &-figure {
+        flex: 0 0 auto;
+        border: 2px solid $white;
+        border-radius: 132px;
+
+        &-image {
+          display: block;
+          width: 132px;
+          aspect-ratio: 1 / 1;
+          border-radius: 132px;
+        }
+      }
+    }
+
+    &-events {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin: 48px 0 0;
+      padding: 0;
+      list-style-type: none;
+
+      &-item {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 14px;
+        text-align: center;
+        color: #fff;
+      }
+    }
+
+    &-visitors {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 48px 24px;
+    }
+
+    &-visitor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 154px;
+      gap: 12px;
+
+      &_lg {
+        flex: 0 0 100%;
+      }
+
+      &-figure {
+        border: 2px solid $white;
+        border-radius: 132px;
+
+        &-image {
+          display: block;
+          width: 132px;
+          aspect-ratio: 1 / 1;
+          border-radius: 132px;
+        }
+      }
+
+      &-name {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+      }
+
+      &-role {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+        color: #fff;
+
+        &_lg {
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+
+      &-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@font-face {
+  font-family: "Mossport";
+  src: url("../fonts/Mossport.otf") format("opentype"), url("../fonts/Mossport.ttf") format("truetype");
+}
 html {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -132,4 +136,232 @@ img {
   .first-screen__event-image {
     width: 200px;
   }
+}
+
+.arena {
+  padding: 72px 0;
+}
+.arena__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 72px;
+}
+@media (max-width: 1340px) {
+  .arena__heading {
+    display: block;
+  }
+}
+@media (max-width: 1340px) {
+  .arena__heading-info {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .arena__heading-info {
+    margin-bottom: 24px;
+  }
+}
+.arena__heading-info-title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .arena__heading-info-title {
+    font-size: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .arena__heading-info-title {
+    font-size: 48px;
+    line-height: 120%;
+  }
+}
+@media (max-width: 576px) {
+  .arena__heading-info-title {
+    font-size: 40px;
+  }
+}
+.arena__heading-info-description {
+  margin-top: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .arena__heading-info-description {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+}
+.arena__heading-time {
+  padding-top: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+}
+@media (max-width: 1340px) {
+  .arena__heading-time {
+    padding-top: 0;
+  }
+}
+@media (max-width: 992px) {
+  .arena__heading-time {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .arena__heading-time {
+    font-size: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .arena__heading-time {
+    font-size: 30px;
+  }
+}
+.arena__content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .arena__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+}
+.arena__card {
+  flex: 0 0 336px;
+}
+.arena__card_auto {
+  flex: 0 0 auto;
+}
+@media (max-width: 1200px) {
+  .arena__card_auto {
+    flex: 0 0 336px;
+  }
+}
+.arena__card-title {
+  margin: 0 0 24px;
+  padding: 16px 24px;
+  font-family: "Mossport", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  border-radius: 16px;
+  background-color: #24387b;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.arena__card-time {
+  margin: 0 0 48px;
+  font-family: "Mossport", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.arena__card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 36px;
+}
+.arena__card-gallery-figure {
+  flex: 0 0 auto;
+  border: 2px solid #ffffff;
+  border-radius: 132px;
+}
+.arena__card-gallery-figure-image {
+  display: block;
+  width: 132px;
+  aspect-ratio: 1/1;
+  border-radius: 132px;
+}
+.arena__card-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 48px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+.arena__card-events-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+}
+.arena__card-visitors {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.arena__card-visitor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 154px;
+  gap: 12px;
+}
+.arena__card-visitor_lg {
+  flex: 0 0 100%;
+}
+.arena__card-visitor-figure {
+  border: 2px solid #ffffff;
+  border-radius: 132px;
+}
+.arena__card-visitor-figure-image {
+  display: block;
+  width: 132px;
+  aspect-ratio: 1/1;
+  border-radius: 132px;
+}
+.arena__card-visitor-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.arena__card-visitor-role {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+}
+.arena__card-visitor-role_lg {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.arena__card-visitor-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
 }
