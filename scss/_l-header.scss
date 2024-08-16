@@ -1,2 +1,146 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 16px 0;
+  background-color: $blue;
+  box-shadow: 0 10px 36px 0 rgba(0, 0, 0, 0.19), 0 3px 13px 0 rgba(0, 0, 0, 0.04);
+
+  &::after {
+    @include desktopsm {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 4;
+      background-color: $blue;
+      box-shadow: 0 10px 36px 0 rgba(0, 0, 0, 0.19), 0 3px 13px 0 rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+  }
+
+  &__sponsor {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    gap: 36px;
+
+    @include laptop {
+      justify-content: space-between;
+      flex: 0 1 auto;
+      gap: 18px;
+      width: 100%;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__nav {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    gap: 24px;
+    box-sizing: border-box;
+
+    @include desktopsm {
+      position: absolute;
+      top: 99%;
+      right: 0;
+      left: 0;
+      z-index: 1;
+      padding: 24px 16px;
+      background-color: $blue;
+      transition: transform ease-in-out 0.2s;
+      transform: translate3d(0, -240px, 0);
+    }
+
+    @include tablet {
+      flex-direction: column;
+      padding: 36px 16px;
+    }
+
+    &.active {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &-link {
+      display: inline-block;
+      padding: 12px 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+      transition: all ease-in-out 0.1s;
+
+      &:hover {
+        color: $red;
+      }
+
+
+
+      &_contacts {
+        color: $red;
+        background-color: $white;
+        border-radius: 16px;
+
+        &:hover {
+          background-color: $red;
+          color: $white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 5;
+    display: none;
+    flex: 0 0 auto;
+
+    @include desktopsm {
+      display: block;
+    }
+ 
+    &-button {
+      display: block;
+      height: 28px;
+      width: 28px;
+      padding: 0;
+      border: none;
+      background: url(../assets/burger.svg) center no-repeat;
+      cursor: pointer;
+
+      &.active {
+        background-image: url(../assets/close.svg);
+      }
+    }
+  }
 }

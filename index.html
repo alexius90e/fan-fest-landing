@@ -7,17 +7,43 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
     <script type="module" src="./js/index.js" defer></script>
-    <!-- <script
-      type="text/javascript"
-      charset="utf-8"
-      async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abff29a133acf8a7d15d7a6c1a4da8c219895dc2130c46c9e7f9144889bf82b56&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"
-    ></script> -->
   </head>
 
   <body>
     <header class="header">
-      <div class="container"></div>
+      <div class="container">
+        <div class="header__sponsor">
+          <a class="header__sponsor-link" href="#">
+            <img
+              class="header__sponsor-link-image"
+              src="./assets/dep-sport-msk.svg"
+              alt="sponsor"
+            />
+          </a>
+          <a class="header__sponsor-link" href="#">
+            <img class="header__sponsor-link-image" src="./assets/msk-sport.svg" alt="sponsor" />
+          </a>
+          <a class="header__sponsor-link" href="#">
+            <img class="header__sponsor-link-image" src="./assets/rpl.svg" alt="sponsor" />
+          </a>
+          <a class="header__sponsor-link" href="#">
+            <img class="header__sponsor-link-image" src="./assets/novoe-radio.svg" alt="sponsor" />
+          </a>
+          <a class="header__sponsor-link" href="#">
+            <img class="header__sponsor-link-image" src="./assets/rjd.svg" alt="sponsor" />
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <a class="header__nav-link" href="#khodynskoe">ХОДЫНСКОЕ ПОЛЕ</a>
+          <a class="header__nav-link" href="#webarena">ВЭБ АРЕНА</a>
+          <a class="header__nav-link header__nav-link_contacts" href="#contacts">Контакты</a>
+        </nav>
+        
+        <div class="header__burger">
+          <button class="header__burger-button"></button>
+        </div>
+      </div>
     </header>
 
     <main class="main">
@@ -33,7 +59,7 @@
         </div>
       </section>
 
-      <section class="arena">
+      <section class="arena" id="khodynskoe">
         <div class="container">
           <div class="arena__heading">
             <div class="arena__heading-info">
@@ -190,7 +216,7 @@
         </div>
       </section>
 
-      <section class="arena">
+      <section class="arena" id="webarena">
         <div class="container">
           <div class="arena__heading">
             <div class="arena__heading-info">
@@ -312,7 +338,7 @@
         </div>
       </section>
 
-      <section class="map">
+      <section class="map" id="contacts">
         <div class="map__container">
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3Abff29a133acf8a7d15d7a6c1a4da8c219895dc2130c46c9e7f9144889bf82b56&amp;source=constructor"
