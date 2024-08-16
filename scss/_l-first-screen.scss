@@ -1,0 +1,60 @@
+.first-screen {
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 900px;
+
+    @include laptop {
+      min-height: 760px;
+    }
+
+    @include tablet {
+      justify-content: center;
+      flex-direction: column;
+      gap: 80px;
+      min-height: auto;
+      padding: 126px 16px 74px;
+    }
+  }
+
+  &__fest {
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+
+      @include desktop {
+        width: 436px;
+      }
+
+      @include laptop {
+        width: 278px;
+      }
+
+      @include tablet {
+        width: 246px;
+      }
+    }
+  }
+
+  &__event {
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+
+      @include desktop {
+        width: 356px;
+      }
+
+      @include laptop {
+        width: 216px;
+      }
+
+      @include tablet {
+        width: 200px;
+      }
+    }
+  }
+}

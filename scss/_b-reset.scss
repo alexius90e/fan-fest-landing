@@ -13,7 +13,18 @@ body {
   margin: 0;
   overflow-y: scroll;
   color: $white;
+  background: url(../assets/bg-top.svg) center top -375px no-repeat;
   background-color: $red;
+  
+  @include laptop {
+    background-size: 1200px;
+    background-position: top -240px center;
+  }
+
+  @include tablet {
+    background-size: 1000px;
+    background-position: top -100px right -430px;
+  }
 }
 
 a,
