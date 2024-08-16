@@ -1,2 +1,90 @@
 .footer {
+  padding: 24px 0;
+  margin-top: -4px;
+  background-color: $blue;
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin: 0 0 48px;
+
+    @include laptop {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include tablet {
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    &-sponsor {
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+      gap: 36px;
+
+      @include laptop {
+        justify-content: space-between;
+        flex: 0 1 auto;
+        gap: 18px;
+        width: 100%;
+      }
+
+      &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-image {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    &-social {
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+      gap: 24px;
+
+      &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-image {
+          display: block;
+          max-width: 100%;
+          height: auto;
+
+          @include tablet {
+            width: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &-item {
+      font-family: 'Gotham Pro', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: #fff;
+
+      @include tablet {
+        font-size: 14px;
+      }
+    }
+  }
 }
