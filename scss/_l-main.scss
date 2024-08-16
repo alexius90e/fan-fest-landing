@@ -1,2 +1,14 @@
 .main {
+  background: url(../assets/main-bg-dotes.svg) top 1000px left -800px no-repeat,
+    url(../assets/main-bg-circles.svg) top 1400px right -1600px no-repeat;
+
+  @include desktopsm {
+    background: url(../assets/main-bg-dotes.svg) top 1000px left -800px no-repeat,
+    url(../assets/main-bg-circles.svg) top 1400px right -2000px no-repeat;
+  }
+
+  @include tablet {
+    background: url(../assets/main-bg-dotes.svg) top 1000px left -800px no-repeat,
+    url(../assets/main-bg-circles.svg) top 2000px right -2000px no-repeat;
+  }
 }
