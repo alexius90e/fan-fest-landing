@@ -521,7 +521,6 @@ img {
 }
 .arena__card-gallery-figure {
   flex: 0 0 auto;
-  border: 2px solid #ffffff;
   border-radius: 132px;
 }
 .arena__card-gallery-figure-image {
@@ -529,6 +528,9 @@ img {
   width: 132px;
   aspect-ratio: 1/1;
   border-radius: 132px;
+  border: 2px solid #ffffff;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .arena__card-events {
   display: flex;
@@ -564,7 +566,6 @@ img {
   flex: 0 0 100%;
 }
 .arena__card-visitor-figure {
-  border: 2px solid #ffffff;
   border-radius: 132px;
 }
 .arena__card-visitor-figure-image {
@@ -572,6 +573,9 @@ img {
   width: 132px;
   aspect-ratio: 1/1;
   border-radius: 132px;
+  border: 2px solid #ffffff;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .arena__card-visitor-name {
   font-family: "Montserrat", sans-serif;

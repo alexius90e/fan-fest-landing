@@ -142,7 +142,6 @@
 
       &-figure {
         flex: 0 0 auto;
-        border: 2px solid $white;
         border-radius: 132px;
 
         &-image {
@@ -150,6 +149,8 @@
           width: 132px;
           aspect-ratio: 1 / 1;
           border-radius: 132px;
+          border: 2px solid $white;
+          object-fit: cover;
         }
       }
     }
@@ -192,7 +193,6 @@
       }
 
       &-figure {
-        border: 2px solid $white;
         border-radius: 132px;
 
         &-image {
@@ -200,6 +200,8 @@
           width: 132px;
           aspect-ratio: 1 / 1;
           border-radius: 132px;
+          border: 2px solid $white;
+          object-fit: cover;
         }
       }
 
